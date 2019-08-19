@@ -1,0 +1,35 @@
+alignment score : 
+
+		match 	 : +1
+		mismatch : -meu
+		indel    : -sigma
+
+meu = 0
+sigma=1;
+
+
+alignment = #matches - meu*(#mismatches) - (sigma)*(indels);
+
+the total number of symbols in two strings = 
+
+total :
++2 *  #matches
++2 * #mismatches
++1 * #deletions
++1 * #insertions
+
+= alignment score + edit distance
+
+
+total =          +2 * #matches
+				 -1 * #insertions
+				 -1 * #deletions
+				 -----------------------> alignment score
+				 +2 * #mismatches
+				 +2 * #insertion
+				 +2 * #deletions
+				 -----------------------> editing distace
+
+
+
+
